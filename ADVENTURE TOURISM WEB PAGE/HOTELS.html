@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <center>
+    <title>Hotel Booking System</title>
+  </center>
+  
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color:black;
+      background-image: url("wallpaper2you_198384.JPG");
+      background-size: no-repeat;
+      background-size: 150%;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Add more styles for forms, buttons, etc. */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><h1><u>HOTEL BOOKING SYSTEM</u></h1>
+    <form id="bookingForm">
+      <label for="checkInDate">Check-in Date:</label>
+      <input type="date" id="checkInDate" required><br><br>
+      
+      <label for="checkOutDate">Check-out Date:</label>
+      <input type="date" id="checkOutDate" required><br><br>
+      
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" min="1" required><br><br>
+      
+      <label for="roomType">Room Type:</label>
+      <select id="roomType" required>
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+        <option value="suite">Suite</option>
+      </select><br><br>
+      
+      <button type="submit">Book Now</button>
+    </form>
+    <div id="bookingStatus"></div>
+  </div>
+</center>
+  <script>
+    const bookingForm = document.getElementById('bookingForm');
+    const bookingStatus = document.getElementById('bookingStatus');
+
+    bookingForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const checkInDate = document.getElementById('checkInDate').value;
+      const checkOutDate = document.getElementById('checkOutDate').value;
+      const guests = document.getElementById('guests').value;
+      const roomType = document.getElementById('roomType').value;
+
+      // Here, you can send the form data to a server using fetch or AJAX
+      // Simulating a response for demonstration purposes
+      const response = {
+        success: true,
+        message: 'Booking confirmed!'
+      };
+
+      if (response.success) {
+        bookingStatus.textContent = response.message;
+      } else {
+        bookingStatus.textContent = 'Booking failed. Please try again.';
+      }
+    });
+  </script>
+</body>
+</html>

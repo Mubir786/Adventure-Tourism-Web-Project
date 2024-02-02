@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent a Car</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color:black;
+      background-image: url("wallpaper2you_198384.JPG");
+      background-size: no-repeat;
+      background-size: 150%;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .car {
+      background-color: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .car img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Add more styles for buttons, forms, etc. */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <center><h1><u>RENT A CAR</u></h1></center>
+    <div class="car">
+      <h2>HONDA CAR</h2>
+      <img src="images (4).JFIF" alt="Car Model 1">
+      <p>Price per day: $100</p>
+      <button class="rent-button" data-price="50">Rent</button>
+    </div>
+    <div class="car">
+      <h2>MERCEDES CAR</h2>
+      <img src="images.JFIF" alt="Car Model 2">
+      <p>Price per day: $150</p>
+      <button class="rent-button" data-price="60">Rent</button>
+    </div>
+    <!-- Add more cars here -->
+  </div>
+
+  <script>
+    const rentButtons = document.querySelectorAll('.rent-button');
+
+    rentButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const price = parseFloat(button.getAttribute('data-price'));
+        const days = parseFloat(prompt('Enter the number of days you want to rent for:'));
+        
+        if (!isNaN(days) && days > 0) {
+          const totalCost = price * days;
+          alert(`Total cost: $${totalCost.toFixed(2)}`);
+        } else {
+          alert('Invalid input. Please enter a valid number of days.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

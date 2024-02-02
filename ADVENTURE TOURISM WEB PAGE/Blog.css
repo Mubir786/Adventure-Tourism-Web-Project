@@ -1,0 +1,84 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main {
+    flex: 2;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    color: #333;
+}
+
+article p {
+    color: #666;
+}
+
+article a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.widget {
+    margin-bottom: 1rem;
+}
+
+.widget h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.widget p {
+    color: #666;
+}
+
+.widget ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.widget li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}

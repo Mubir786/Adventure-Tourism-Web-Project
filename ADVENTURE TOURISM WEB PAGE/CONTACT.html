@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <style>
+        body {
+            color:black;
+            background-image: url("Tourist-spot-in-Pakistan_16dd4ff666a_original-ratio.JPG");
+            background-size: no-repeat;
+            background-size: 100%;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        button {
+            background-color: steelblue;
+            color: white;
+            padding: 27px 21px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .left{
+        dispaly:inline-block;
+        /*border:2px solid black;*/
+        width:75px;
+        /*position:absolote;*/
+        position:fixed;
+        margin:10px;
+        left:0px;
+        top:0px;
+
+    }
+    .left img{
+        width:96px;
+        filter:invert(100%);
+
+    }
+
+    .left div{
+        line-height:19px;
+        font-size:16px;
+        text-align:center;
+    }
+    .mid{
+        display: block;
+        width: 680px;
+        margin:-15px auto;
+        /*border:2px solid black;*/
+
+    }
+
+    .right{
+        position:absolute;
+        position: fixed;
+        right:-92px;
+        top:0px;
+        width:399px;
+        margin:8px;
+        dispaly:inline-block;
+        /*border:2px solid black;*/
+    }
+    .navbar{
+        display:inline-block;
+        overflow:hidden;
+        background-color: black;
+        position: fixed;
+        top: -7px;
+        width:65%%;
+    }
+    .navbar li{
+        font-size:12px;
+        display:inline-block;
+    }
+    .navbar li a{
+        float: left;
+        display: block;
+        color:white;
+        text-align: center;
+        text-decoration:none;
+        padding:38px 6px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        background: snow;
+        text-decoration: underline;
+        color:#ed930f;
+    }
+    .btn{
+        margin:9px, 9px;
+        background-color:white;
+        color:white;
+        padding:0px, 0px;
+        border:1px solid white;
+        border-radius:23px;
+        font-size:8px;
+        cursor:pointer;
+    }
+    .btn:hover{
+        background-color:black;
+    }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="left">
+            <img src="download (4).JFIF" alt="" length="25" width="25">
+            <div style="color:;"> ADVENTURE </div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="E:\ADVENTURE TOURISM WEB PAGE\MUBIR WEB.html" class="active">HOME</a></li>
+                <li><a href="E:\ADVENTURE TOURISM WEB PAGE\ABOUT US.html" >ABOUT US</a></li>
+                <li><a href="E:\ADVENTURE TOURISM WEB PAGE\CONTACT.html" >CONTACT</a></li>
+                <li><a href="E:\ADVENTURE TOURISM WEB PAGE\CONTACT US.html" >CONTACT US</a></li>
+                <li><a href="E:\ADVENTURE TOURISM WEB PAGE\HOTELS.html" >HOTELS</a></li>
+                <li><a href="E:\ADVENTURE TOURISM WEB PAGE\RENT A CAR.html" >RENT A CAR</a></li>
+                <li><a href="E:\ADVENTURE TOURISM WEB PAGE\BLOG.html" >BLOG</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn"><a href="https://web.whatsapp.com" > CALL US </a></button>
+            <button class="btn"><a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AeDOFXic-CrBHYucdzjCt_BKbMDOJPZ0P08uHHRgCDvWjnHQ8tgvqXPjj9XnsqoSpgTc1OY0eZ_q5Q&osid=1&passive=1209600&service=mail"> MAIL US </a></button>
+            <button class="btn"><a href="" > SIGN UP </a></button>
+            <button class="btn"><a href="" > SIGN IN </a></button>
+        </div>
+    <hr>
+    </header>
+<br>
+<br>
+<br>
+<br>
+
+    <h1>CONTACT</h1>
+    <form action="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AeDOFXic-CrBHYucdzjCt_BKbMDOJPZ0P08uHHRgCDvWjnHQ8tgvqXPjj9XnsqoSpgTc1OY0eZ_q5Q&osid=1&passive=1209600&service=mail" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit"><a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AeDOFXic-CrBHYucdzjCt_BKbMDOJPZ0P08uHHRgCDvWjnHQ8tgvqXPjj9XnsqoSpgTc1OY0eZ_q5Q&osid=1&passive=1209600&service=mail">Send Message</button>
+    </form>
+</body>
+</html>
